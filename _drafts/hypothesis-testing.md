@@ -1,0 +1,23 @@
+---
+
+Hypothesis testing without Alternatives
+Significance tests done right
+So, I am reading this book called “Probability Theory; The logic of Science” by E.T. Jaynes. It is an excellent read, highly recommended, and quite an eye-opener to me in terms of understanding statistics and data analysis from first principles. Here I am sharing a few particularly interesting insights from chapter 9.11 (“Significance Tests”).
+A simple experiment
+A p-value gives, in deliberately vague terms, something like the probability for some “Null-Hypothesis” to be true. For example, let’s say we perform an experiment of 100 repeated coin tosses, yielding 55 heads and 45 tails. As “Null-hypothesis”, we denote the hypothesis that the coin was “fair” and that the experiment was performed in a fair manner, with the same expected frequency of 50% for both heads and tails (As a side remark, note that “fair” in these assumptions is actually very difficult to define without circularity, which is another topic covered in the book). We can then compute a p-value for the Null-hypothesis given the observed data, which in this case turns out to be (Binomial tail-test) p=0.37. So given the usual “significance threshold” of 0.05, we would not reject the Null hypothesis and conclude that the results of the experiment are consistent with a fair coin and fair tossing.
+OK, so far so good.
+From a Bayesian perspective, there is a problem here. You cannot really talk about the “probability for a hypothesis” without defining among which alternative hypotheses you consider the Null-hypothesis. Somehow magically, the Binomial tail-test used above gets away with this flaw and still produces a (generally usable) p-value that means something. But what does it mean?
+
+
+---
+
+Let us denote the Null hypothesis by H⁰ and the alternative hypothesis by H¹. Giving both of them prior probability 1/2, Bayes’ theorem for H⁰ then reads
+(where D denotes the data). For H⁰ we know what the likelihood of the data should be, it should be binomial. Specifically, for 55 heads out of 100 trials, and a heads-probabality of 50% under H⁰, we have the binomial probability P(D|H⁰)≈0.048.
+So, what type of alternative hypothesis should we consider? If you are tempted to test all possible alternatives, you run into problems. For example, it is always possible to cook up some pathological hypothesis that Jaynes calls “the sure-thing hypothesis”, which has the property that P(D|H¹)=1. This hypothesis states that the observed data is exactly produced with likelihood 1, and there could not have been any other result. Such a hypothesis means that not only the correct frequencies, but also the correct order of coin tosses is predicted. Clearly, we do not want to consider this hypothesis.
+Instead, we would like to compare our Null-hypothesis with some set of reasonable alternative hypotheses. Specifically, the hypotheses that we would like to consider are all from the “Bernoulli-class” of hypothesis, which are parameterized by a single number 𝜆. These hypotheses state that i) all trials are independent, ii) at each trial, the probability for heads is 𝜆. 
+To keep things simple, we would like to still make pairwise comparisons and avoid considering all alternative hypothesis at the same time (more on that later). It would therefore be instructive to consider the best possible Bernoulli-class hypothesis as our hypothesis H¹. It is easy to show, and intuitively clear, that the best possible Bernoulli-class hypothesis for our data is the one where 𝜆 equals the observed frequency of heads in the sample. Therefore, we consider 𝜆=0.55, which leads to P(D|H¹)≈0.08, giving posterior probability of P(H⁰|D)≈0.38, which is very close to the p-value obtained using the Binomial tail-test above.
+So to conclude up to this point: In this simple setting, the p-value obtained from an orthodox significance test is similar to the posterior probability for the Null hypothesis compared to an implied best alternative hypothesis, which is simply the hypothesis that success probabilities equal observed success-frequencies.
+So up to here, our Bayesian approach can let us feel a bit smug that we at least have a crystal-clear interpretation of our result (as a posterior probability) in contrast to the more vaguely defined p-values, but there is not much of a practical difference between the two approaches. This poses the question whether orthodox significance tests are always more or less doing the “right” thing. No, they don’t, as the following example shows.
+A more complicated experiment
+Psi vs. Chi-squared
+Hypothesis testing vs. parameter estimation

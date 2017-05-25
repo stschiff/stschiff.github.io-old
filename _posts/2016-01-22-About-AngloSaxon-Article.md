@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "How rare genetic mutations help us understand human history (Part I)"
+title:  "How rare genetic mutations help us understand human history"
 date:   2016-01-22 20:30:50 +0200
 categories:
     - Population_Genetics
@@ -8,16 +8,18 @@ categories:
     - Ancient_DNA
 ---
 
-# How rare genetic mutations help us understand human history (Part I)
-
 **Ancient DNA obtained from Iron Age and Anglo-Saxon skeletons reveals that today’s English are on average 38% of Anglo-Saxon ancestry.**
 
-![OakingtonSkeleton]({{ site.url }}/assets/oakingtonSkeleton.jpg)
+![OakingtonSkeleton]({{ site.baseurl }}/assets/oakingtonSkeleton.jpg)
 *Who were the Anglo-Saxons? This skeleton from a 5th-6th century graveyard in Oakington, East England, was one of 10 samples from which we extracted and sequenced DNA to learn about English population history. Photo ©Duncan Sayer*
 
 Human history is deeply imprinted in our genomes, through patterns of common ancestry. These patterns can be studied by looking at mutations that are shared between people living in different times in different places. In this post I will summarize our recent genetic study on Anglo-Saxon immigration history in Britain, and in doing so,will describe some new methodology that we have developed for this project, which is based on rare mutations.
 
+
+
 * * *
+
+
 
 A large majority of the inhabitants of Great Britain and Ireland today speak English, a language related to Dutch and German. Going back 2,000 years, their native tongue was a Celtic language, related to Welsh, Gaelic and Irish, which are spoken by relatively few people today compared to English.
 
@@ -38,7 +40,7 @@ We therefore decided to look for rare mutations that are shared by only a few pe
 
 To find these rare mutations, we analysed the genomes of hundreds of people living today in Europe and selected mutations that were found in not more than 0.5% of all chromosomes. Because we were interested in finding “Anglo-Saxon-specific” mutations, we especially looked for genetic variants found in modern-day Dutch people (who live closest to where the Anglo-Saxons supposedly came from). We then looked at how many of those rare “Dutch mutations” were shared by our ancient samples and by modern British people. Here is a figure showing the results:
 
-![RareAlleleSharing]({{ site.url }}/assets/RareAlleleSharing.jpg)
+![RareAlleleSharing]({{ site.baseurl }}/assets/RareAlleleSharing.jpg)
 *This figure shows the relative number of rare mutations that each ancient sample (coloured dots) shares with modern Dutch individuals. The number has been normalized by sharing with modern Spanish individuals. Anglo-Saxon immigrants (red and orange) have more rare “Dutch mutations” than modern English people (black) and people who lived in England in the Iron Age (in green and blue), before the Anglo-Saxons came. Figure from our article (License: CC BY 4.0)*
 
 Note that the absolute numbers shown below the plot are normalized and without absolute meaning. Only the relative positioning of the samples matters. First, we can see that most of the Anglo-Saxon samples (in red and orange) carry about 50% more rare Dutch mutations than the Iron Age samples do (in blue and green), which is quite a strong signal. Second, we find that modern English samples carry an intermediate number of rare Dutch mutations, compared to Iron Age and Anglo-Saxon samples. More precisely, the modern English samples place at 38% on average between the Iron Age and the Anglo-Saxon samples (100% would be all the way to the right at the Anglo-Saxons, 0% would be all the way left to the Iron Age samples). And because allele sharing is linear under admixture, we conclude that modern English can be modelled as a two-way mixture of 38% Anglo-Saxon ancestry, and 62% Iron Age ancestry.
