@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "How rare genetic mutations help us understand human history"
+title:  "How rare genetic mutations help us understand human history (Part I)"
 date:   2016-01-22 20:30:50 +0200
 categories:
     - Population_Genetics
