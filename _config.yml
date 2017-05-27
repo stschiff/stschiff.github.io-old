@@ -12,7 +12,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://stschiff.github.com" # the base hostname & protocol for your site
 twitter_username: stschiff
 github_username:  stschiff
-theme: jekyll-theme-cayman
+theme: cayman
 
 # Build settings
 markdown: kramdown
