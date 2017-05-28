@@ -18,7 +18,8 @@ But do we even need natural selection to explain the sequence divergence between
 
 In this scenario, if there are N individuals, how many new mutations are there in the entire population each generation? Well, there should be 2N ✕ 40 new mutations in total, because there are 2N sets of chromosomes in all diploid individuals (excluding X and Y chromosomes). What is the probability that any one of those mutations eventually becomes a substitution, so gets fixed in the population? For a neutral mutation, the answer is 1/2N, which can be seen from basic coalescence theory:
 
-![CoalescentSchematic]({{ site.baseurl }}/assets/coalescence_schematic.png)
+![CoalescentSchematic]({{ site.baseurl }}/assets/coalescence_schematic_small.png)
+
 *All 2N genes in the present generation (top) are derived from one ancestor who lived in the past (bottom). Every gene has an equal probability to be the one that gets ancestral to all subsequent generations, so the fixation probability for a neutral mutation is 1/2N. Figure adopted from Bamshad and Wooding, Nat. Rev. Gen. 2003*
 
 Every gene in the present generation has an equal chance of eventually becoming the sole ancestor for all genes many generations later, so every gene has a chance of 1/2N of being that ancestor. Let us look at how many mutations eventually get fixed each generation: we have 2N ✕ 40 ✕ 1/2N = 40.
